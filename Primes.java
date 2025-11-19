@@ -6,14 +6,14 @@ public class Primes {
 
         int primeCount = 0;
 
-        for (int i = 0; i < highestNum; i++) {
+        for (int i = 0; i <= highestNum; i++) {
             if (isPrime(i)) {
                 primeCount++;
                 System.out.println(i);
             }
         }
         int ratio =  (primeCount * 100) / highestNum;
-        System.out.printf("There are %d primes between 2 and %d (%d are primes)%n", primeCount, highestNum, ratio);
+        System.out.printf("There are %d primes between 2 and %d (%d%% are primes)%n", primeCount, highestNum, ratio);
     }
 
     // Checks whether an inputted int (assumed > 0) is a prime number
