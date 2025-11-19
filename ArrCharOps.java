@@ -108,7 +108,7 @@ public class ArrCharOps {
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         // Replace the following statement with your code
         if (arr.length <= beginIndex) { return null;    }
-        char[] subCharArr = new char[endIndex - beginIndex + 1];
+        char[] subCharArr = new char[endIndex - beginIndex];
         for (int i = beginIndex; i < endIndex; i++) {   subCharArr[i - beginIndex] = arr[i];    }
 
         return subCharArr;
