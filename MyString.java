@@ -26,6 +26,9 @@ public class MyString {
     public static boolean contains(String str1, String str2) {
         // Replace the following statement with your code
         if (str1.length() < str2.length()) {    return false;   }
+        if (str2.length() == 0) {   return true;    }
+        if (str1.length() == 0) {   return false;   }
+        
         // runs until the remaining string is not long enough to contain str2
         for (int i = 0; i < str1.length() - str2.length() + 1; i++) {
             if (str1.charAt(i) == str2.charAt(0)) {
