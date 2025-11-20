@@ -19,7 +19,16 @@ public class MyString {
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
         // Replace the following statement with your code
-        return str.toLowerCase();
+        char[] charArray = str.toCharArray();
+
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] >= 65 && charArray[i] < 91) {
+                charArray[i] = (char) (charArray[i] + 32);
+            }
+        }
+        String lowercase = String.valueOf(charArray);
+
+        return lowercase;
     }
 
     /** If str1 contains str2, returns true; otherwise returns false. */
